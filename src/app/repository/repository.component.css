@@ -1,0 +1,247 @@
+.ui-ccontiner-p {
+    margin: 2em;
+}
+
+
+/* .......Base 64 INI ...... */
+
+h2 {
+    font-size: 1.8em;
+}
+
+h3 {
+    font-size: 1.4em;
+    margin: 0px;
+}
+
+.ui-button-base {
+    padding: .5em 1em;
+    background: #3360a5;
+    color: #FFF;
+    cursor: pointer
+}
+
+.ui-button-base:hover {
+    background: #6f98d4;
+    color: #FFF;
+}
+
+.ui-img-base {
+    text-align: center;
+    margin: 1em;
+    width: 35%;
+}
+
+.ui-tearea-base {
+    height: 9em;
+    width: 50%;
+}
+
+
+/* .......Base 64 FIN ...... */
+
+
+/* ......input.. INI... */
+
+.ui-container-input {
+    margin: 2em 0em;
+}
+
+.btn-input {
+    background-color: #069;
+    border: 1px solid rgba(0, 204, 204, .6);
+    color: #fff;
+    padding: 6px 16px 9px 16px;
+    text-decoration: none;
+}
+
+.btn-input:hover {
+    background-color: #00b3bf;
+}
+
+.input-icon-wrap {
+    display: flex;
+    flex-direction: row;
+}
+
+.input-with-icon {
+    /* flex: 1; */
+    width: 100%;
+    margin-right: .1em;
+}
+
+.input-icon,
+.input-with-icon {
+    padding: 6px 0px 8px 0px;
+    font-size: 16px;
+}
+
+
+/* ......input.. FIN... */
+
+#myprueba {
+    height: 200px;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #4caf50;
+    margin-top: 3em;
+    cursor: pointer;
+}
+
+.prueba {
+    border: 5px solid #c0ca33;
+}
+
+.prueba:hover {
+    border: 5px solid #c6ff00;
+}
+
+
+/* .. Tootil.. INI. */
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+
+/* Tooltip text */
+
+
+/* .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 100%;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: .2em.2em;
+    border-radius: 6px;
+    position: absolute;
+    font-size: 12px;
+    z-index: 1;
+    right: .2em;
+    top: 3.5em;
+} */
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 100%;
+    background-color: black;
+    color: #87cefa;
+    text-align: center;
+    padding: .2em.2em;
+    border-radius: 10px;
+    position: absolute;
+    font-size: 12px;
+    z-index: 1;
+    right: .2em;
+    top: -3.5em;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+
+/* Bottom Arrow */
+
+.tooltip .tooltiptext::after {
+    content: " ";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+}
+
+
+/* Top Arrow */
+
+
+/* .tooltip .tooltiptext::after {
+    content: " ";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent black transparent;
+} */
+
+
+/* Left Arrow */
+
+
+/* .tooltip .tooltiptext::after {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent black transparent transparent;
+} */
+
+
+/* Right Arrow */
+
+
+/* .tooltip .tooltiptext::after {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    left: 100%; 
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent transparent black;
+} */
+
+
+/* .. Tootil.. Fin. */
+
+
+/* ....cortar text UNI */
+
+.potision-cotar {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cortar {
+    width: 200px;
+    /* height: 20px; */
+    padding: 20px;
+    text-align: justify;
+    border: 1px solid blue;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    transition: all 1s;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.cortar:hover {
+    width: 200px;
+    white-space: initial;
+    overflow: visible;
+    cursor: pointer;
+}
+
+
+/* ....cortar text Fin */
+
+
+/* .....media cuery..... */
+
+@media only screen and (max-width: 600px) {}
