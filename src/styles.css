@@ -1,1 +1,87 @@
-/* You can add global styles to this file, and also import other style files */
+@import "~primeng/resources/primeng.min.css";
+@import "~font-awesome/css/font-awesome.min.css";
+
+/* Por debajo de 400px */
+
+@media screen and (max-width: 400px) {
+    body {
+        font-size: 10px;
+    }
+}
+
+.fondocargando {
+    height: 100%;
+    background-color: rgba(255, 221, 0, 0.1);
+    color: #ffffff;
+}
+
+.cargando {
+    width: 80px;
+    height: 80px;
+    border: 15px solid rgba(114, 159, 181, 0.61);
+    border-top-color: rgba(0, 204, 204, 0.6);
+    ;
+    border-left-color: rgba(0, 204, 204, 0.6);
+    ;
+    border-radius: 100%;
+    /*centrar*/
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    /*giro*/
+    animation: girar 1.5s linear infinite;
+}
+
+.cargando2 {
+    width: 200px;
+    height: 200px;
+    border: 15px solid rgba(0, 0, 0, 0);
+    border-top-color: rgb(140, 206, 233);
+    border-left-color: rgb(180, 221, 228);
+    border-radius: 100%;
+    /*centrar*/
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    /*giro*/
+    animation: girar2 1.5s linear infinite;
+}
+
+.centrarcargando {
+    text-align: center;
+    height: 15px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+@keyframes girar {
+    from {
+        transform: rotate(0deg)
+    }
+    to {
+        transform: rotate(360deg)
+    }
+}
+
+@keyframes girar2 {
+    from {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+    }
+    to {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+    }
+}
