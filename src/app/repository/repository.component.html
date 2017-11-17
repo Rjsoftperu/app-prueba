@@ -1,28 +1,25 @@
+<div class="ui-ccontiner-p">
+    <!--............base64-conver. INI...............-->
 
 
-
-    <div class="ui-ccontiner-p">
-        <!--............base64-conver. INI...............-->
-
-
-        <h3 class="center">Imagen reducido</h3>
-        <div class="center">
-            <img class="ui-img-base" [src]="domSanitizer.bypassSecurityTrustUrl(SelectImagen.imagen)">
+    <h3 class="center">Imagen reducido</h3>
+    <div class="center">
+        <img class="ui-img-base" [src]="domSanitizer.bypassSecurityTrustUrl(SelectImagen.imagen)">
 
 
-            <br>
-            <label class="ui-button-base" (change)="onChange_fileChange($event)"> 
+        <br>
+        <label class="ui-button-base" (change)="onChange_fileChange($event)"> 
                   <i class="fa fa-upload tamanoicon" aria-hidden="true"></i>seleccione Imagen <input #myInput type="file" style="display: none;">
               </label>
 
-            <p>{{ debug_size_before }} bytes <b>Tamaño orginal </b> </p>
-            <p>{{ debug_size_after }} bytes <b>Tamaño reducido</b></p>
-            <textarea class="ui-tearea-base" type="text" pInputText placeholder="Descripción" [(ngModel)]="SelectImagen.imagen"></textarea>
-        </div>
+        <p>{{ debug_size_before }} bytes <b>Tamaño orginal </b> </p>
+        <p>{{ debug_size_after }} bytes <b>Tamaño reducido</b></p>
+        <textarea class="ui-tearea-base" type="text" pInputText placeholder="Descripción" [(ngModel)]="SelectImagen.imagen"></textarea>
+    </div>
 
-        <!--............base64-conver. FIN...............-->
+    <!--............base64-conver. FIN...............-->
 
-        <!-- <div>
+    <!-- <div>
             <p class="cortar potision-cotar"> Chanante ipsum dolor sit amet, tollina elit to sueltecico ea enim cobete enratonao. Gaticos eiusmod, nisi, ju-já aliqua. Enim ad nostrud nui tempor quis nuiiiii chavalada adipisicing cartoniano zagal ut aliqua.</p>
             <br>
             <div class="tooltip">Hover over me<span class="tooltiptext">Tooltip text</span></div>
@@ -30,28 +27,28 @@
         </div> -->
 
 
-        <div class="ui-container-input">
-            <div class="input-icon-wrap">
-                <input type="text" class="input-with-icon" placeholder="Nombre..*">
-                <i class="fa fa-plus btn-input" aria-hidden="true"></i>
+    <div class="ui-container-input">
+        <div class="input-icon-wrap">
+            <input type="text" class="input-with-icon" placeholder="Nombre..*">
+            <i class="fa fa-plus btn-input" aria-hidden="true"></i>
 
-                <i class="fa fa-minus btn-input" aria-hidden="true"></i>
+            <i class="fa fa-minus btn-input" aria-hidden="true"></i>
 
-                <!-- <a href="" class="input-icon btn-primary"><span class="fa fa-search"></span></a> -->
-                <!-- <a href="" class="input-icon btn-primary"><span class="fa fa-search"></span></a> -->
-            </div>
-        </div>
-
-
-        <div class="ui-container-input">
-            <div class="input-icon-wrap">
-                <textarea type="text" class="input-with-icon" placeholder="Texarea..*"></textarea>
-                <i class="fa fa-plus btn-input" aria-hidden="true"></i>
-
-                <i class="fa fa-minus btn-input" aria-hidden="true"></i>
-
-                <!-- <a href="" class="input-icon btn-primary"><span class="fa fa-search"></span></a> -->
-                <!-- <a href="" class="input-icon btn-primary"><span class="fa fa-search"></span></a> -->
-            </div>
+            <!-- <a href="" class="input-icon btn-primary"><span class="fa fa-search"></span></a> -->
+            <!-- <a href="" class="input-icon btn-primary"><span class="fa fa-search"></span></a> -->
         </div>
     </div>
+
+
+    <div class="ui-container-input">
+        <div class="input-icon-wrap">
+            <textarea type="text" class="input-with-icon" placeholder="Texarea..*"></textarea>
+            <i class="fa fa-plus btn-input" aria-hidden="true"></i>
+
+            <i class="fa fa-minus btn-input" aria-hidden="true"></i>
+
+            <!-- <a href="" class="input-icon btn-primary"><span class="fa fa-search"></span></a> -->
+            <!-- <a href="" class="input-icon btn-primary"><span class="fa fa-search"></span></a> -->
+        </div>
+    </div>
+</div>
